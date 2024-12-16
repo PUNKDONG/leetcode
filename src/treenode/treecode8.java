@@ -7,6 +7,7 @@ import com.sun.source.tree.Tree;
 import java.util.*;
 
 public class treecode8{
+
 static class TreeNode{
     int val;
     TreeNode left;
@@ -33,7 +34,7 @@ public static void main(String[]args){
     public static void helper(TreeNode root, List<Integer> list){
     if(root==null){return ;}
 
-     list.add(root.val );
+     list.add(Integer.valueOf(root.val));
 
         helper(root.left,list);
         helper(root.right,list);
